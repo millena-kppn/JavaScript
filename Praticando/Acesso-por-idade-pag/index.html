@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Acesso</title>
+   <!-- link css -->
+    <style>
+      body{
+         font: bolder 1.7em 'Arial';
+         text-align: center;
+         margin-top: 50vh;
+      }
+    </style>
+</head>
+<body>
+   <!-- link js -->
+    <script>
+      var idade = 18
+      var acesso = window.prompt('Digite sua idade...')
+      var liberação = idade <= acesso? 'Acesso liberado!':'Acesso negado!'
+      window.alert(`${liberação}`)
+      var mensagem = idade <= acesso? 'Seja bem-vindo!':'Menores de idade não podem acessar está página.'
+      document.write(`${mensagem}`)
+    </script>
+</body>
+</html>
