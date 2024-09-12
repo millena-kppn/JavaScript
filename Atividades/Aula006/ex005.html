@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- css -->
+   <style>
+      body{
+         background: rgb(19, 19, 85);
+         color: white;
+         font: normal 1.2em Arial;
+      }
+   </style>
+</head>
+<body>
+   <h1>Iniciando estudos com DOM</h1>
+   <p>Aqui vai o resultado</p>
+   <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+   <p>Click em mim</p>
+   <div id="msg">Alterando id</div>
+   <div name="msg1">Alterando name</div>
+   <div class="msg2">Alterando class</div>
+   <!-- JS -->
+    <script>
+      // var´s
+    var tagp = window.document.getElementsByTagName('p')[1]//formatação com tag (No plural sempre usar [] )
+    var formataçãodadiv = window.document.getElementById('msg')//formatação com id
+    var formataçãononame = window.document.getElementsByName('msg1')[0]//formatção com name (No plural sempre usar [] )
+    var formataçãodeclass = window.document.getElementsByClassName('msg2')[0]//formatação com class (No plural sempre usar [] ) 
+   // formatações das var´s
+    window.document.write(tagp.innerText)// innerText pega o texto sem formatação
+    window.alert(tagp.innerHTML)// pega o texto com formatações 
+    formataçãodadiv.style.background = 'red'
+    formataçãodadiv.innerText = 'Posso mudar o texto, se liga!'
+    formataçãononame.innerText = 'Nova mensagem...'
+   formataçãodeclass.style.background = 'green'
+</script>
+</body>
+</html>
