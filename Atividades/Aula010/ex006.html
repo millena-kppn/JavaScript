@@ -20,5 +20,26 @@
    <div id="area">
       Interaja ...
    </div>
+   <!-- js -->
+    <script>
+      var interaja = window.document.getElementById('area')
+      // para usarmos a var em mais funções deixamos ela fora do bloco de function
+      interaja.addEventListener('click', clicar)
+      interaja.addEventListener('mouseenter', entrar)
+      interaja.addEventListener('mouseout', sair)
+      function clicar(){
+         interaja.innerText = 'Clicou!'
+         interaja.style.backgroundColor = 'pink'
+      }
+      function entrar(){
+         interaja.innerText = 'Entrou!'
+         interaja.style.color = 'black'
+         interaja.style.backgroundColor = 'darckviolet'
+      }
+      function sair(){
+         interaja.innerText = 'Saiu!'
+         interaja.style.backgroundColor = 'darckviolet'
+      }
+    </script>
 </body>
 </html>
