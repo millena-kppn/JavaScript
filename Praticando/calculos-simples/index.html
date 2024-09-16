@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculando Valores</title>
+   <!-- css -->
+   <style>
+      body{
+         background-color: rgb(120, 178, 245);
+         font: normal 0.8em Arial;
+      }
+      section{
+         background-color: #2a69a3;
+         width: 500px;
+         height: 200px;
+         padding: 35px;
+         border-radius: 15px;
+         position: absolute;
+         left: 50%;
+         top: 30%;
+         transform: translate(-50%);
+      }
+      input,button{
+         width: 80px;
+         height: 40px;
+         margin: 5px;
+         background-color: #8abee9;
+         color: #1c4469;
+         font-size: 1.2em;
+         border-radius: 3px;
+         border: none;
+         box-shadow: 15px 7px 4px rgba(0, 0, 0, 0.116);
+      }
+      button:hover{
+         background-color: #1c4469;
+         transition: 0.8s;
+         color: #8abee9;
+      }
+      .position-input{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .position-button{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 25px;
+      }
+      h2{
+         text-align: center;
+         color: white;
+      }
+    </style>
+</head>
+<body>
+   <section>
+      <div class="position-input">
+         <input type="number" name="box-number-on" id="box-number-on">
+         <input type="number" name="box-number-two" id="box-number-two">
+      </div>
+      <div class="position-button">
+      <!-- Adição -->
+      <button id="button-somar">Somar</button>
+      <!-- Subtração -->
+      <button id="button-subtrair">Subtrair</button>
+      <!-- Divisão -->
+      <button id="button-dividir">Dividir</button>
+      <!-- Multiplicação -->
+      <button id="button-multiplicar">Multiplicar</button>
+   </div>
+   <!-- resultado do cálculo -->
+   <h2 id="resultado">Resultado</h2>
+   </section>
+   <!-- javaScript -->
+   <script>
+      // configurações gerais
+      var on = window.document.getElementById('box-number-on')
+      var two = window.document.getElementById('box-number-two')
+      var calculo = window.document.getElementById('resultado')
+      //   Adição
+      var button1 = window.document.getElementById('button-somar')
+      button1.addEventListener('click',somar)
+      //  Subtração
+      var button2 = window.document.getElementById('button-subtrair')
+      button2.addEventListener('click',subtrair)
+     //   Divisão
+     var button3 = window.document.getElementById('button-dividir')
+     button3.addEventListener('click',dividir)
+    //   Multiplicação
+     var button4 = window.document.getElementById('button-multiplicar')
+     button4.addEventListener('click',multiplicar)
+      //  Funtion´s
+      function somar(){
+         var number1 = Number(on.value)
+         var number2 = Number(two.value)
+         var somando = number1 + number2
+         calculo.innerHTML = (`O resultado de ${number1} somado a ${number2} equivale a ${somando}!`)
+      }
+      function subtrair(){
+         var number3 = Number(on.value)
+         var number4 = Number(two.value)
+         var subtraindo = number3 - number4
+         calculo.innerHTML = (`O resultado de ${number3} subtraido por ${number4} equivale a ${subtraindo}!`)
+       }
+      function dividir(){
+         var number5 = Number(on.value)
+         var number6 = Number(two.value)
+         var dividindo = number5 / number6
+         calculo.innerHTML = (`O resultado da divisão de ${number5} por ${number6} equivale a ${dividindo}!`)
+      }
+      function multiplicar(){
+         var number7 = Number(on.value)
+         var number8 = Number(two.value)
+         var multiplicando = number7 * number8
+         calculo.innerHTML = (`O resultado da multiplicação de ${number7} por ${number8} equivale a ${multiplicando}!`)
+      }
+    </script>
+</body>
+</html>
