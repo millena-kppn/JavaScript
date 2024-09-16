@@ -4,12 +4,36 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Somando Números</title>
+   <!-- css -->
+    <style>
+      body{
+         background-color: rgb(183, 183, 253);
+         font: normal 1.1em Arial;
+      }
+      input{
+         height: 25px;
+         width: 60px;
+         border-radius: 5px;
+      }
+      #res{
+         margin-top: 15px;
+      }
+      #somar{
+        width: 90px;
+        background-color: blueviolet;
+        border-radius: 5px;
+        color: white;
+      }
+      #somar:hover{
+      background-color:rgb(93, 29, 153) ;
+      }
+    </style>
 </head>
 <body>
    <h1>Somando Valores</h1>
    <input type="number" name="txtn1" id="txtn1"> +
    <input type="number" name="txtn2" id="txtn2"> 
-   <input type="button" value="Somar" onclick="somar()">
+   <input type="button" value="Somar" id="somar" onclick="somar()">
    <div id="res">Resultado</div>
    <!-- js -->
     <script>
@@ -20,7 +44,7 @@
          var n1 = Number(tn1.value)
          var n2 = Number(tn2.value)
          var s = n1 + n2
-         res.innerHTML = s
+         res.innerHTML = (`O resultado da soma de ${n1} mais ${n2} é igual há <strong>${s}</strong>!`)
       }
     </script>
 </body>
