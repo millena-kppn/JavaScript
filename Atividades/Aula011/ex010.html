@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Detran</title>
+   <!-- css -->
+   <style>
+      body{
+         background-color: wheat;
+         font: normal 1.2em Arial;
+      }
+      input{
+         width: 100px;
+         height: 50px;
+         border-radius: 20px;
+         border: none;
+         font-size: 18px;
+         text-align: center;
+      }
+      #calcularvelocidade{
+         background-color: #faf396;
+         /* box-shadow: 15px 9px 20px 8px rgba(0, 0, 0, 0.205); */
+         box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      }
+      #calcularvelocidade:hover{
+         background-color: #cfca80;
+         transition: 0.8s;
+      }
+   </style>
+</head>
+<body>
+   <h1>Sistema de multas</h1>
+   Velocidade do carro: <input type="number" name="caixa-velocidade" id="caixa-velocidade"> Km/h
+   <input type="button"  value="Verificar" id="calcularvelocidade">
+   <p>Resposta</p>
+   <!-- js -->
+   <script>
+      var calcular = window.document.getElementById('calcularvelocidade')
+      calcular.addEventListener('click',calcularvelocidade)
+      // adicionando function
+      function calcularvelocidade(){
+         var velocimetro = window.document.getElementById('caixa-velocidade')
+         var resposta = window.document.getElementsByTagName('p')[0]
+         var numbervelocimetro = Number(velocimetro.value)
+         if (numbervelocimetro > 60){
+         resposta.innerHTML = ('Você ultrapassou o limite de velocidade, <strong>MULTADO!</strong>')
+         }else{
+            resposta.innerHTML = ('Você está dentro do limite de velocidade, dirija com cuidado!')
+         }
+      }
+   </script> 
+</body>
+</html>
