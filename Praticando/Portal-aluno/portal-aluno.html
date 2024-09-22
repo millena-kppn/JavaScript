@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portal Aluno</title>
+   <!-- link icon -->
+   <link rel="shortcut icon" href="Imgs/chapeu-de-graduacao.png" type="image/x-icon">
+   <!-- css --> 
+</head>
+<style>
+   body{
+      background-color: whitesmoke;
+      font: normal 1.3em Arial;
+   }
+   #container{
+      background-color: lightblue;
+      width: 600px;
+      height: 400px;
+      text-align: center;
+      padding: 5px;
+      border-radius: 0px 35px 0px 35px ;
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%);
+   }
+   input{
+      width: 80px;
+      margin: 5px;
+      font-size: 0.7em;
+      border: none;
+      border-radius: 5px;
+      height: 40px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
+   }
+   #button-resultado{
+      background-color: #317a9c;
+   }
+   #button-resultado:hover{
+      background-color: #205168;
+      color: #538aa3;
+      transition: 0.9s;
+   }
+   #container > img{
+      width: 250px;
+   }
+ </style>
+</head>
+<body>
+<div id="container">
+   <img src="Imgs/alunos-img-png" alt="">
+   <p>Saiba que o semestre vale de 0 a 10 ...</p>
+   <p>Seu resultado é:</p>
+   <input type="number" name="caixa-nota" placeholder="Nota" id="caixanota">
+   <input type="button" value="Resultado" id="button-resultado">
+</div>
+<!-- js -->
+ <script>
+   var button = window.document.getElementById('button-resultado')
+   button.addEventListener('click',resultado)
+   function resultado(){
+      var nota = window.document.getElementById('caixanota')
+      var aluno = Number(caixanota.value)
+      var mensagem = window.document.getElementsByTagName('p')[1]
+   if(aluno >= 6){
+         mensagem.innerHTML = ('Parabéns! Você foi aprovado.')
+      }else{
+         mensagem.innerHTML = ('Não foi dessa vez, você está reprovado.')
+      }
+   }
+ </script>
+</body>
+</html>
