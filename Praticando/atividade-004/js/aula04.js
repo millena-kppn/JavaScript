@@ -3,7 +3,12 @@
 let produtos = ['Arroz', 'Feijão', 'Leite']
 var codigos = Array(10, 20, 30)
 let meses = ['Jan', 'Fev', 'Mar', 'Abr']
+var test = Array(10) // Array com 10 length vazios
 
+// Pocição inicial e atribuição de valor ou alteração
+test[0] = 'Oi'
+test[9] = 'Tudo bem?'
+test[5] = 'Opa!'
 // ▼ Funções com Array ▼
 
 // ADICIONAR no final push = empurre
