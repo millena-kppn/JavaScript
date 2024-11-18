@@ -25,7 +25,7 @@ const carros = {
 /* pessoa.nome
    pessoa.idade
    pessoa.peso
-   pessoa.altura
+   pessoa.altura 
  */
 
    //ACESSAR PROPRIEDADE usando ['']
@@ -37,7 +37,21 @@ const carros = {
 
    //OPERAÇÃO IMC = peso / (altura * altura)
    let imc = pessoa.peso / (pessoa.altura * pessoa.altura)
-
-   //.toFixed() - Limita o número de casas decimais
-   console.log('imc' + imc.toFixed(2)) 
    
+   //.toFixed() - Limita o número de casas decimais
+   console.log(' MEU IMC ' + imc.toFixed(2)) 
+
+   //ALTERAR / UTILIZAR VALOR de propiedades
+   pessoa.nome = 'Millena Kappaun' 
+   produtos.descricao = ['Arroz']
+   produtos.preco = [4.99]
+   
+   // Usando spreed operator
+   produtos.descricao = [...produtos.descricao, 'Feijão', 'Trigo']
+   produtos.preco = [...produtos.preco, 9.99, 4.79]
+   // ... + objeto + atributo/(Array) = Significa fazer uma cópia depois disso basta adicionar mais elementos
+
+   //Usando spreed operator em objetos const
+   carros.marca  = [...carros.marca, 'WV']
+   carros.modelo = [...carros.modelo, 'Fusca']
+   carros.ano    = [...carros.ano,'1979']
