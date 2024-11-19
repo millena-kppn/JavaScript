@@ -54,4 +54,4 @@ const carros = {
    //Usando spreed operator em objetos const
    carros.marca  = [...carros.marca, 'WV']
    carros.modelo = [...carros.modelo, 'Fusca']
-   carros.ano    = [...carros.ano,'1979']
+   carros.ano    = [...carros.ano,1979]
