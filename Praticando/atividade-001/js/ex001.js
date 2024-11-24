@@ -12,7 +12,7 @@ let minhaIdade = 20
 let ehDoador = false
 let teste = null
 
-// Criar Contantes e atribuir valor
+// Criar Constantes e atribuir valor
 const PI = 3.1445
 const TAXA =0.5
 
