@@ -4,46 +4,40 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   background-color: cadetblue;
-   font-family: Arial, Helvetica, sans-serif;
 }
 /* Desafio 01 */
-.card {
+h1{
+   font-family: Arial, Helvetica, sans-serif;
+   color: #222;
+   margin: 15px 0px 15px 0px;
+}
+ .container{
+   width: 350px;
+   height: 550px;
    font-family: 'Roboto', sans-serif;
-   width: 280px;
-   height: 100%;
-   margin: 1rem;
-   padding: 1rem;
-   border-radius: 8px;
-   background: #222;
+   font-size: 0.95rem;
+   text-align: center;
+   padding: 20px;
+   margin: 15px;
+   border-radius: 5px;
    border: 5px solid #444;
    box-shadow: 0 0 5px #222;
-   color: #191919;
-   font-size: 0.95rem;
-
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
-
-.card h2 {
-   font-size: 1.5rem;
-   text-align: center;
-   color: #ececec;
    background-color: #222;
-   margin-bottom: 0.625rem;
-}
-.card img {
+ }
+ .container>h2{
+   color: white;
+   margin-bottom: 15px;
+ }
+ #img_fedor{
    width: 100%;
-   border-radius: 8px;
-   border: 5px solid #444;
-   margin-bottom: 1rem;
-}
-
-.card p {
-   background: #fff;
+   margin: -5px;
+   margin-bottom: 5px;
    border-radius: 5px;
-   padding: 5px;
-   margin-bottom: 0.625rem;
-   text-align: center;
+   border: 5px solid #444;
 }
+ .informacoes>p{
+   padding: 7px;
+   margin-top: 8px;
+   background-color: white;
+   border-radius: 5px;
+ }
