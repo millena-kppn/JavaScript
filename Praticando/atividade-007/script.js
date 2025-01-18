@@ -20,4 +20,9 @@ const autor = "Aaron Swartz"
 document.getElementById("data").innerHTML = `${dia}/${mes}/${ano}`
 document.getElementById("texto").innerHTML = `"${texto}"`
 document.getElementById("autor").innerHTML = `${autor}`
+// Desafio 03
+let meses = ["Janiero", " Fevereiro", " Março"]
+//para aparecer no navegador usamos ...
+document.getElementById("meses").innerHTML = `${meses}...`
+
 

@@ -44,7 +44,7 @@ h1{
  }
  /* Desafio 02 */
  .container_02{
-  /* background-color: cadetblue; */
+   /* background-color: cadetblue; */
    width: 400px;
    font-family: 'Special Elite', cursive;
    background-image: url(IMGS/textura.jpg);
@@ -53,21 +53,32 @@ h1{
    margin: 15px;
    border-radius: 5px;
    box-shadow: 0 0 5px #222;
- }
- #data, #texto, #autor{
-  padding: 5px;
- }
-#data{
-  margin-top: 5px;
-  font-weight: bolder;
-  font-size: small;
-}
-#texto{
-  margin: 0px  20px 0px 20px;
-  font-style: italic;
-  font-size: 1.5em;
-  line-height: 1.2em;
-}
-#autor{
-  text-align: end;
-}
+  }
+  #data, #texto, #autor{
+    padding: 5px;
+  }
+  #data{
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: small;
+  }
+  #texto{
+    margin: 0px  20px 0px 20px;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+  #autor{
+    text-align: end;
+  }
+  /* Desafio 03 */
+  .container_03{
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    margin: 15px;
+    box-shadow:  2px 2px 5px #222222b0;
+  }
+  .container_03>p{
+    margin-top: 5px;
+  }
