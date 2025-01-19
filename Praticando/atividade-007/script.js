@@ -24,5 +24,16 @@ document.getElementById("autor").innerHTML = `${autor}`
 let meses = ["Janiero", " Fevereiro", " Março"]
 //para aparecer no navegador usamos ...
 document.getElementById("meses").innerHTML = `${meses}...`
+// Desafio 04
+let jogo_lol = {
+   name : 'League Of Legends - LOL',
+   developer : 'Riot Games',
+   ano : 2009
+}
+//para aparecer no navegador usamos ...
+document.getElementById("name").innerHTML = `${jogo_lol.name}`
+document.getElementById("developer").innerHTML = `${jogo_lol.developer}`
+document.getElementById("ano").innerHTML = `${jogo_lol.ano}`
+
 
 
