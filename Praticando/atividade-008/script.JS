@@ -22,8 +22,35 @@ let titulo = document.querySelector('h1')
 // .textContent
 // propiedade ou atributo textContent
 // serve para acessar ou alterar conteudo de um elemento que foi selecionado
-// console.log(titulo.textContent)
-// console.log(titulo.innerHTML)
+ console.log(titulo.textContent)
+ console.log(titulo.innerHTML)
 
 titulo.textContent = 'DOM'
-// console.log(titulo.textContent)
+console.log(titulo.textContent)
+
+// .querySelectorAll()
+// selecionar todos os elementos com base na tag, #id ou .class
+let testando = document.querySelectorAll('.box')
+ console.log('testando')
+ document.write(testando[0].textContent)
+ document.write(testando[1].textContent)
+ document.write(testando[2].textContent)
+ testando[0].textContent = 'texto qualquer'
+
+// Existem também os métodos 
+// MAS, PREFIRA USAR O .querySelector()
+// mais...
+/*.getElementsByTagName()
+  .getElementsById()
+  .getElementsByClassName()
+*/ 
+let teste_tag = document.getElementsByTagName('div')
+console.log('testeTag')
+document.write(teste_tag[0].textContent)
+document.write(teste_tag[1].textContent)
+let teste_id = document.getElementById('titulo')
+ console.log('testeID')
+document.write(teste_id.textContent)
+let teste_class = document.getElementsByClassName('box')
+console.log('testeClass')
+document.write(teste_class[1].textContent)
