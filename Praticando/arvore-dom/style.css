@@ -1,0 +1,30 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+.fruta{
+   padding: 5px;
+   font-family: "Delius", serif;
+}
+.fruta>p{
+   padding: 15px;
+   margin: 5px;
+}
+.verduras{
+   width: 50%;
+   background-color: aquamarine;
+   padding: 5px;
+   font-family: "Chewy", serif;
+   font-size: 1.2em;
+}
+.verduras>p{
+   padding: 15px;
+   margin: 5px;
+}
