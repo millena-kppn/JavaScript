@@ -25,3 +25,19 @@ estilo_frutas.setAttribute('class','fruta')
 // mais um exemplo
 let estilo_verduras = document.querySelector('#verduras')
 estilo_verduras.setAttribute('class', 'verduras')
+// mudar cor da página com botões
+let fundo = document.querySelector('#principla_pag')
+let dark = document.querySelector('#bt_dark')
+let light = document.querySelector('#bt_light')
+// registrar a manipulção a espera de um evento
+bt_dark.addEventListener('click', modo_dark)
+bt_light.addEventListener('click', modo_light)
+// determinando a função 
+function modo_dark(){
+   fundo.classList.add('dark')
+   fundo.classList.remove('light')
+}
+function modo_light(){
+   fundo.classList.add('light')
+   fundo.classList.remove('dark')
+}

@@ -9,6 +9,18 @@
 body{
    font-family: Arial, Helvetica, sans-serif;
 }
+button{
+   margin: 10px;
+   padding: 15px;
+}
+button:hover{
+   background-color: rgb(194, 186, 186);
+}
+#conteudo{
+   width: 800px;
+   height: 500px;
+   margin: 15px;
+}
 .fruta{
    padding: 5px;
    font-family: "Delius", serif;
@@ -18,7 +30,7 @@ body{
    margin: 5px;
 }
 .verduras{
-   width: 50%;
+   width: 100%;
    background-color: aquamarine;
    padding: 5px;
    font-family: "Chewy", serif;
@@ -27,4 +39,11 @@ body{
 .verduras>p{
    padding: 15px;
    margin: 5px;
+}
+/* class criada no js  */
+.dark{
+   background-color: rgb(42, 44, 44);
+}
+.light{
+   background-color: rgba(255, 255, 255, 0.897);
 }
