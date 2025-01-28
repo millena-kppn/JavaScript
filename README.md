@@ -1,2 +1,2 @@
 # JavaScript
-Aprimorando e aprendendo ...
+Aprendendo e aprimorando!
