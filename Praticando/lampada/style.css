@@ -4,7 +4,6 @@
 }
 #conteudo{
    width: 600px;
-   background-color: rgb(165, 196, 196);
    margin: 20px;
    padding: 30px;
    text-align: center;
@@ -13,8 +12,28 @@
    left: 50%;
    transform: translate(-50%, -50%);
 }
+#neutra{
+   width: 150px;
+   padding: 15px;
+   margin: 15px;
+}
 #on,#off{
    width: 80px;
    padding: 10px;
    margin: 0px 5px 0px 5px;
+}
+/* class do js */
+.ligar{
+background-image: url(img/acessa.png);
+background-repeat: no-repeat;
+background-size: 150px;
+background-position: center;
+background-color: rgb(252, 252, 189);
+}
+.desligar{
+background-image: url(img/apagada.png);
+background-repeat: no-repeat;
+background-size: 150px;
+background-position: center;
+background-color: rgb(189, 188, 188);
 }
