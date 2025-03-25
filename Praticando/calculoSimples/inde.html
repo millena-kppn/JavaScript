@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Teste</title>
+</head>
+<body>
+   <input type="number" name="number" id="numbone" placeholder="Digite um valor">
+   <input type="number" name="number" id="numbtwo" placeholder="Digite um valor">
+   <button onclick="soma()">Soma</button>
+   <button onclick="subtrai()">Subtrai</button>
+   <button onclick="multiplicar()">multoplicar</button>
+   <button onclick="dividir()">dividir</button>
+   <script>
+      function soma(){
+            var numberOn = document.getElementById("numbone").value;
+            var numberTwo = document.getElementById("numbtwo").value;
+            var soma = Number(numberOn) + Number(numberTwo);
+            alert(soma);
+         }
+       function subtrai(){
+            var numberOn = document.getElementById("numbone").value;
+            var numberTwo = document.getElementById("numbtwo").value;
+            var subtrai = Number(numberOn) - Number(numberTwo);
+            alert(subtrai);
+         }
+       function multiplicar(){
+            var numberOn = document.getElementById("numbone").value;
+            var numberTwo = document.getElementById("numbtwo").value;
+            var multiplicar = Number(numberOn) * Number(numberTwo);
+            alert(multiplicar);
+         }
+       function dividir(){
+            var numberOn = document.getElementById("numbone").value;
+            var numberTwo = document.getElementById("numbtwo").value;
+            var dividir = Number(numberOn) / Number(numberTwo);
+            alert(dividir);
+         }
+   </script>
+</body>
+</html>
