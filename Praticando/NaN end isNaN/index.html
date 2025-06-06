@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>NaN end isNaN</h1>
+   <p>Nan = Not-a-Number = Não-é-um-Numero-Válido</p>
+   <p>isNaN = Verifica se o valor fornecido é um número ou não. Se for NaN, retorna verdadeiro; caso contrário, retorna falso.</p>
+   <h2>Olhe o console!</h2>
+   <script>
+      "use strict"
+      var vogais = "AEIOU"
+      console.log(Number(vogais))// vai gerar um valor Nan = NÃO É NÚMERO
+      console.log("a" * 1)// aqui estamos tentanto multiplicar uma string com um tipo int o resultado será NaN = TBM NÃO É UM NÚMERO 
+      
+      // COMPARANDO
+      //tudo que eu for comparar com Nan sempre será NaN = SEMPRE FALSO
+      console.log(NaN == 1)
+      console.log(NaN == 0)
+      console.log(NaN == true)
+      console.log(NaN == false)
+      console.log(NaN == NaN)
+      
+      //PARA VERIFICAR UM VALOR NaN usamos isNaN = 
+      console.log(isNaN(vogais))// retorna TRUE
+   </script>
+</body>
+</html>
