@@ -6,6 +6,35 @@
    <title>Aula 13 de JS</title>
 </head>
 <body>
-   <!-- FAZER ATIVIDADE -->
+<h1>Estrutura de Repetição</h1>
+<section class="conteudos">
+</section>
+<script>
+   "use strict"
+   let carros = ['Fusca', 'Brasilia', 'Gurgel']//Array criado com três valores 
+   //FOR = para faça
+   //i = interador, interação ou index
+   for (let i = 1; i <= 5; i++){//toda vez que i for menor ou igual a 5 ele vai repetir se for verdadeiro e cada repetição o i que vale 1 vai receber mais 1 
+      document.write(i + " ")//irá aparecer na tela o valor de i + "espaço"
+   }
+   for (let i = 5; i >= 1; i--){//Neste exemplo é exatamente igual o de cima a unica coisa que muda na estrutura é que os valores forma invertidos e há uma subtração 
+      document.write(i + " ")
+   }
+   // length = quantidade de elementos no Array, acessamos as positions 
+   for (let i = 0; i < carros.length; i++){//Nesta estrutura nos percorremos o Array atráves de seu valor de posição, fiezemos isso com length
+      document.write(`<li>${carros[i]}</li>`)//irá aparecer na tela o Array carro e a posição dos elementos, i representa todas as posições  
+   }
+//FOREACH forEach = para cada 
+// O método .forEach() é usado para percorrer cada elemento do array.
+   let frutas = ['Pera', 'Uva', 'Maçã', 'Banana', 'Melancia']
+   frutas.forEach(function(fruta, i){//Aqui temos fruta, ele vai trazer cada fruta do Array frutas. Temos i, que vai percorrer cada fruta e trazer sua position
+      document.write(`${i} ${fruta} <br>`)//Na tela irá aparecer cada elemento de frutas com a sua posição 
+   }) 
+   //No exemplo de baixo como não temos o indice ele irá percorrer sem mostrar a posição
+   // let carros = ['Fusca', 'Brasilia', 'Gurgel']
+   carros.forEach(function(carro) {
+    document.write(`${carro} <br>`)
+})
+</script>
 </body>
 </html>
