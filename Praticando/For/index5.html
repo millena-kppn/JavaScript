@@ -10,13 +10,11 @@
    <script>
       "use strict"
       window.onload = function(){
-         console.log("Você esta no console da página!")
+         console.log("Você está no console!")
       }
-      let soma = 0
-      for(let i = 1; i <= 20; i+=1){
-        if(i % 2 == 0){//o valor de (i) dividido por 2 terá que ser 0, se for aparecerá no console
-         console.log(i)
-        }
+      let nomes = ['Ana', 'João', 'Carlos']//Array com valores 
+      for(let i = 0; i < nomes.length; i++){//irei fazer um loop com a quantidade de elementos no Array
+         console.log(`Olá, ${nomes[i]}!`)//mostro no console os valores do Array acessando suas posições
       }
    </script>
 </body>

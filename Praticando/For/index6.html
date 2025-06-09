@@ -9,14 +9,13 @@
    <h1>Olhe o console!</h1>
    <script>
       "use strict"
-      window.onload = function(){
-         console.log("Você esta no console da página!")
+      window.onload = function () {
+         console.log("Você está no console!")
       }
-      let soma = 0
-      for(let i = 1; i <= 20; i+=1){
-        if(i % 2 == 0){//o valor de (i) dividido por 2 terá que ser 0, se for aparecerá no console
-         console.log(i)
-        }
+      //Tabuada do 5 
+      for (let i = 1; i <= 10; i++) {
+         let resultado = 5 * i;
+         console.log(`5 x ${i} = ${resultado}`);
       }
    </script>
 </body>
