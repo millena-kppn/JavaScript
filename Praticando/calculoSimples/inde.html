@@ -6,6 +6,7 @@
    <title>Teste</title>
 </head>
 <body>
+   <h2>Para ver os resultados de For, Olhe no console</h2>
    <input type="number" name="number" id="numbone" placeholder="Digite um valor">
    <input type="number" name="number" id="numbtwo" placeholder="Digite um valor">
    <button onclick="soma()">Soma</button>
@@ -13,6 +14,7 @@
    <button onclick="multiplicar()">multoplicar</button>
    <button onclick="dividir()">dividir</button>
    <script>
+      "use strict"
       function soma(){
             var numberOn = document.getElementById("numbone").value;
             var numberTwo = document.getElementById("numbtwo").value;
@@ -37,6 +39,18 @@
             var dividir = Number(numberOn) / Number(numberTwo);
             alert(dividir);
          }
+         //exemplos com For
+         let somaFor = 0
+         for (let i = 1; i <= 6; i++){
+            somaFor = somaFor + i
+         }
+         console.log(somaFor)
+         // proximo exemplo
+          let subtracaoFor = 0
+          for (let i = 1; i <= 3; i++){
+            subtracaoFor = subtracaoFor - i
+          }
+          console.log(subtracaoFor)
    </script>
 </body>
 </html>
