@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Praticas For</title>
+</head>
+<body>
+   <h1>Olhe o console!</h1>
+   <script>
+      "use strict"
+      window.onload = function () {
+         console.log("Você esta no console da página!")
+      }
+      let soma = 0//variavel para guaradr o total da soma
+      for (let i = 1; i <= 5; i++) {
+         soma = soma + i// a cada repetição somamos o valor de i na variavel soma
+         // Primeira volta: soma = 0 + 1 → soma = 1
+         // Segunda volta: soma = 1 + 2 → soma = 3
+         // Terceira volta: soma = 3 + 3 → soma = 6
+         // Quarta volta: soma = 6 + 4 → soma = 10
+         // Quinta volta: soma = 10 + 5 → soma = 15
+      }
+      console.log(soma)//fora do escopo a variavel soma vai trazer o ultimo valor | dentro ela vai puxar todas as somas 
+   </script>
+</body>
+</html>
