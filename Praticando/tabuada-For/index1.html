@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabuada</title>
+</head>
+<body>
+   <h1>Olhe o console!</h1>
+   <script>
+      "use strict"
+      window.onload = function(){
+         console.log("Carregou a página. Você está no console!")
+      }
+      for(let i = 1; i <= 10; i++){//vai percorrer o loop até 10
+         let tabuadaValor = 2 * i//a cada loop que ocorrer, vai acontecer uma multiplicação do valor de  i X 2
+         console.log(`2 x ${i} = ${tabuadaValor}`)//console dentro do escopo trás todos os valores 
+      }
+   </script>
+</body>
+</html>
